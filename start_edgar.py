@@ -13,7 +13,7 @@ class Listener:
         print ("The adventure is listening!")
         homedir = os.environ['HOME']
         path = homedir + "/Library/Messages/"
-        self.Adv.start_adventure('iMessage;-;+15047567435')
+        self.Adv.start_adventure('5047567435')
         try:
             while True:
                 time.sleep(1)

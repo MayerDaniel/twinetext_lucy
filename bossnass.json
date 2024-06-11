@@ -3,15 +3,8 @@
     {
       "pid": 1,
       "name": "Start",
-      "text": "[[love]]\n\n\n[[like]]\n\n[[neutal]]\n\n[[mad]]\n\n(link: \"this should also be mad\")[(goto: \"mad\")mad]",
+      "text": "[[love]]\n\n\n[[like]]\n\n[[neutal]]\n\n[[mad]]",
       "links": [
-        {
-          "text": "<goto>",
-          "destination": {
-            "name": "mad",
-            "pid": 5
-          }
-        },
         {
           "text": "love",
           "destination": {

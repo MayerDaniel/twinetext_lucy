@@ -41,10 +41,10 @@ class Adventure():
                 imagebody = """
                 osascript -e 'tell application "Messages"
                   set targetBuddy to "%s"
-                  set targetService to id of 1st account whose service type = iMessage
-                  set ImageAttachment to POSIX file "./%s" as alias  
+                  set targetService to id of 1st account whose service type = SMS
+                  set ImageAttachment to POSIX file "/Users/danniboi/projects/twinetext_lucy/%s" as alias  
                   set theBuddy to participant targetBuddy of account id targetService
-                  send textMessage to theBuddy
+                  send ImageAttachment to theBuddy
                 end tell' """ % (guid, pic)
             body = """
             osascript -e 'tell application "Messages"
@@ -58,9 +58,10 @@ class Adventure():
             if pic:
                 imagebody = """
                 osascript -e 'tell application "Messages"
-                  set myid to "%s"
-                  set ImageAttachment to POSIX file "./%s" as alias
-                  set theBuddy to a reference to chat id myid
+                  set targetBuddy to "%s"
+                  set targetService to id of 1st account whose service type = SMS
+                  set ImageAttachment to POSIX file "/Users/danniboi/projects/twinetext_lucy/%s" as alias
+                  set theBuddy to participant targetBuddy of account id targetService
                   send ImageAttachment to theBuddy
                 end tell' """ % (guid, pic)
             body = """
@@ -99,13 +100,19 @@ class Adventure():
         self.send_message(self.convert_to_imessage(self.pid_map[guid]), guid)
 
     def read(self, message):
+        flag = False
         guid = message[GUID]
-        guid = guid
+        print("1")
+        print(guid, self.pid_map)
+        for pid in self.pid_map:
+            if pid in guid and guid != pid:
+                guid = pid
         if guid in self.pid_map and message[MESSAGE_CONTENT]:
             text = message[MESSAGE_CONTENT].text
+            print("2")
             date = message[MESSAGE_CONTENT].date
             command = text.split(" ")
-            print (command)
+            print("3")
             if(command[0] in self.react_map):
                 print (guid)
                 option = command[0]
