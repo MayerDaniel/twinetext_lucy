@@ -1,0 +1,63 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "You are on a beach\n\n[[look around]] \n[[wade into the water]]",
+      "links": [
+        {
+          "text": "look around",
+          "destination": {
+            "name": "look around",
+            "pid": 2
+          }
+        },
+        {
+          "text": "wade into the water",
+          "destination": {
+            "name": "wade into the water",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "look around",
+      "text": "There is a coconut tree on the middle of the island\n\n[[try to get a coconut]] ",
+      "links": [
+        {
+          "text": "try to get a coconut",
+          "destination": {
+            "name": "try to get a coconut",
+            "pid": 6
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "Untitled Passage",
+      "text": "",
+      "links": []
+    },
+    {
+      "pid": 4,
+      "name": "test 1",
+      "text": "neener",
+      "links": []
+    },
+    {
+      "pid": 5,
+      "name": "wade into the water",
+      "text": "You are eaten by a shark. You died.",
+      "links": []
+    },
+    {
+      "pid": 6,
+      "name": "try to get a coconut",
+      "text": "You fall off the tree and break your neck. You died.",
+      "links": []
+    }
+  ]
+}

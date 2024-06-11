@@ -1,0 +1,21 @@
+// Celine Kittens
+digraph {
+	1 [label=Start]
+	2 [label="Check under the bed"]
+	3 [label="Go peek in the closet"]
+	4 [label="Close the pen first, duh!"]
+	5 [label="Put the cat(s) back in the pen"]
+	6 [label="No, all caught!"]
+	7 [label="Wait a minute, I still hear some meowing!"]
+	1 -> 2
+	1 -> 3
+	1 -> 4
+	2 -> 5
+	3 -> 5
+	4 -> 2
+	4 -> 3
+	5 -> 6
+	5 -> 7
+	7 -> 2
+	7 -> 3
+}

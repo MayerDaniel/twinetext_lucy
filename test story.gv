@@ -1,0 +1,12 @@
+// test story
+digraph {
+	1 [label=Start]
+	2 [label="look around"]
+	3 [label="Untitled Passage"]
+	4 [label="test 1"]
+	5 [label="wade into the water"]
+	6 [label="try to get a coconut"]
+	1 -> 2
+	1 -> 5
+	2 -> 6
+}

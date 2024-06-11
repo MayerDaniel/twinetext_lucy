@@ -1,0 +1,102 @@
+{
+  "passages": [
+    {
+      "pid": 1,
+      "name": "Start",
+      "text": "[[love]]\n\n\n[[like]]\n\n[[neutal]]\n\n[[mad]]\n\n(link: \"this should also be mad\")[(goto: \"mad\")mad]",
+      "links": [
+        {
+          "text": "<goto>",
+          "destination": {
+            "name": "mad",
+            "pid": 5
+          }
+        },
+        {
+          "text": "love",
+          "destination": {
+            "name": "love",
+            "pid": 2
+          }
+        },
+        {
+          "text": "like",
+          "destination": {
+            "name": "like",
+            "pid": 3
+          }
+        },
+        {
+          "text": "neutal",
+          "destination": {
+            "name": "neutal",
+            "pid": 4
+          }
+        },
+        {
+          "text": "mad",
+          "destination": {
+            "name": "mad",
+            "pid": 5
+          }
+        }
+      ]
+    },
+    {
+      "pid": 2,
+      "name": "love",
+      "text": "LOVE\n\n[[Start]] ",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 3,
+      "name": "like",
+      "text": "LIKE\n\n[[Start]] ",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 4,
+      "name": "neutal",
+      "text": "NEUTRAL\n\n[[Start]] ",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    },
+    {
+      "pid": 5,
+      "name": "mad",
+      "text": "MAD\n\n[[Start]] ",
+      "links": [
+        {
+          "text": "Start",
+          "destination": {
+            "name": "Start",
+            "pid": 1
+          }
+        }
+      ]
+    }
+  ]
+}

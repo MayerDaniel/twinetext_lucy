@@ -1,0 +1,17 @@
+// bossnass
+digraph {
+	1 [label=Start]
+	2 [label=love]
+	3 [label=like]
+	4 [label=neutal]
+	5 [label=mad]
+	1 -> 5
+	1 -> 2
+	1 -> 3
+	1 -> 4
+	1 -> 5
+	2 -> 1
+	3 -> 1
+	4 -> 1
+	5 -> 1
+}
